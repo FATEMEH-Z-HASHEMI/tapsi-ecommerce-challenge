@@ -281,5 +281,3 @@ git push -u origin main
 ```
 
 If `origin` already exists, update it instead of adding a duplicate remote.
-#   t a p s i - e c o m m e r c e - c h a l l e n g e  
- 
