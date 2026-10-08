@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 800" role="img" aria-labelledby="title">
+  <title id="title">Product image unavailable</title>
+  <rect width="800" height="800" rx="56" fill="#f5f7f7"/>
+  <rect x="190" y="190" width="420" height="420" rx="48" fill="#eaeded" stroke="#cacccc" stroke-width="16"/>
+  <circle cx="330" cy="330" r="54" fill="#b1b2b2"/>
+  <path d="M230 545 360 405l85 90 58-62 67 112H230Z" fill="#747575"/>
+</svg>

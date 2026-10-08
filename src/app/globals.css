@@ -1,0 +1,147 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand: var(--tapsi-color-brand);
+  --color-surface-primary: var(--tapsi-color-surface-primary);
+  --color-surface-secondary: var(--tapsi-color-surface-secondary);
+  --color-surface-tertiary: var(--tapsi-color-surface-tertiary);
+  --color-surface-accent: var(--tapsi-color-surface-accent);
+  --color-surface-accent-light: var(--tapsi-color-surface-accent-light);
+  --color-surface-negative: var(--tapsi-color-surface-negative);
+  --color-surface-negative-light: var(--tapsi-color-surface-negative-light);
+  --color-surface-positive: var(--tapsi-color-surface-positive);
+  --color-surface-positive-light: var(--tapsi-color-surface-positive-light);
+  --color-page: var(--tapsi-color-surface-background-primary);
+  --color-content-primary: var(--tapsi-color-content-primary);
+  --color-content-secondary: var(--tapsi-color-content-secondary);
+  --color-content-tertiary: var(--tapsi-color-content-tertiary);
+  --color-content-disabled: var(--tapsi-color-content-disabled);
+  --color-content-accent: var(--tapsi-color-content-accent);
+  --color-content-negative: var(--tapsi-color-content-negative);
+  --color-content-positive: var(--tapsi-color-content-positive);
+  --color-on-brand: var(--tapsi-color-content-on-brand);
+  --color-border-primary: var(--tapsi-color-border-primary);
+  --color-border-selected: var(--tapsi-color-border-selected);
+  --color-border-focus: var(--tapsi-color-border-focus);
+  --color-border-negative: var(--tapsi-color-border-negative);
+
+  --radius-t1: var(--tapsi-radius-1);
+  --radius-t2: var(--tapsi-radius-2);
+  --radius-t3: var(--tapsi-radius-3);
+  --radius-t4: var(--tapsi-radius-4);
+  --radius-t5: var(--tapsi-radius-5);
+  --radius-t6: var(--tapsi-radius-6);
+  --radius-pill: var(--tapsi-radius-full);
+}
+
+:root {
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  min-width: 320px;
+  background: var(--tapsi-color-surface-background-primary);
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--tapsi-color-surface-background-primary);
+  color: var(--tapsi-color-content-primary);
+  font-family: var(--tapsi-typography-font-family), sans-serif;
+  font-size: var(--tapsi-typography-body-md-size);
+  line-height: var(--tapsi-typography-body-md-height);
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+::selection {
+  background: var(--tapsi-palette-orange-100);
+  color: var(--tapsi-color-content-primary);
+}
+
+.type-display-sm {
+  font-family: var(--tapsi-typography-display-sm-font);
+  font-size: var(--tapsi-typography-display-sm-size);
+  font-weight: var(--tapsi-typography-display-sm-weight);
+  line-height: var(--tapsi-typography-display-sm-height);
+}
+
+.type-headline-lg {
+  font-family: var(--tapsi-typography-headline-lg-font);
+  font-size: var(--tapsi-typography-headline-lg-size);
+  font-weight: var(--tapsi-typography-headline-lg-weight);
+  line-height: var(--tapsi-typography-headline-lg-height);
+}
+
+.type-headline-md {
+  font-family: var(--tapsi-typography-headline-md-font);
+  font-size: var(--tapsi-typography-headline-md-size);
+  font-weight: var(--tapsi-typography-headline-md-weight);
+  line-height: var(--tapsi-typography-headline-md-height);
+}
+
+.type-headline-sm {
+  font-family: var(--tapsi-typography-headline-sm-font);
+  font-size: var(--tapsi-typography-headline-sm-size);
+  font-weight: var(--tapsi-typography-headline-sm-weight);
+  line-height: var(--tapsi-typography-headline-sm-height);
+}
+
+.type-label-md {
+  font-family: var(--tapsi-typography-label-md-font);
+  font-size: var(--tapsi-typography-label-md-size);
+  font-weight: var(--tapsi-typography-label-md-weight);
+  line-height: var(--tapsi-typography-label-md-height);
+}
+
+.type-label-sm {
+  font-family: var(--tapsi-typography-label-sm-font);
+  font-size: var(--tapsi-typography-label-sm-size);
+  font-weight: var(--tapsi-typography-label-sm-weight);
+  line-height: var(--tapsi-typography-label-sm-height);
+}
+
+.type-body-sm {
+  font-family: var(--tapsi-typography-body-sm-font);
+  font-size: var(--tapsi-typography-body-sm-size);
+  font-weight: var(--tapsi-typography-body-sm-weight);
+  line-height: var(--tapsi-typography-body-sm-height);
+}
+
+.focus-ring {
+  outline: none;
+}
+
+.focus-ring:focus-visible {
+  box-shadow:
+    0 0 0 2px var(--tapsi-color-surface-primary),
+    0 0 0 4px var(--tapsi-color-border-focus);
+}
+
+.brand-soft-gradient {
+  background: var(--tapsi-color-gradient-surface-brand-light);
+}
+
+.safe-inline {
+  padding-left: max(1rem, env(safe-area-inset-left));
+  padding-right: max(1rem, env(safe-area-inset-right));
+}
+
+@media (min-width: 768px) {
+  .safe-inline {
+    padding-left: max(1.5rem, env(safe-area-inset-left));
+    padding-right: max(1.5rem, env(safe-area-inset-right));
+  }
+}

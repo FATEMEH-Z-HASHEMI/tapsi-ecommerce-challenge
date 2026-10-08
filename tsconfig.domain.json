@@ -1,0 +1,18 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "strict": true,
+    "skipLibCheck": true,
+    "outDir": ".domain-build",
+    "rootDir": "src"
+  },
+  "include": [
+    "src/types/domain.ts",
+    "src/lib/catalog.ts",
+    "src/lib/cart.ts",
+    "src/lib/variants.ts",
+    "src/lib/currency.ts"
+  ]
+}
